@@ -1,10 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ViewHome from "./components/views/ViewHome/ViewHome";
 function App() {
   return (
     <>
-      <MyComponent></MyComponent>
+      <ViewHome></ViewHome>
     </>
   );
 }
