@@ -1,10 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './BaseMain.css';
+import React from "react";
+import "./BaseMain.css";
 
 const BaseMain = () => (
   <div className="BaseMain" data-testid="BaseMain">
-    BaseMain Component
+    <h1>Exercices</h1>
+    <ul>
+      <div>
+        <li>Hip Trust</li>
+      </div>
+      <li>Plank</li>
+    </ul>
   </div>
 );
 
