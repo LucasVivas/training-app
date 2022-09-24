@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./DefaultLayout.css";
 import BaseHeader from "../../base/BaseHeader/BaseHeader";
 import BaseMain from "../../base/BaseMain/BaseMain";
