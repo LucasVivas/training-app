@@ -6,7 +6,7 @@ import BaseFooter from './BaseFooter';
 describe('<BaseFooter />', () => {
   test('it should mount', () => {
     render(<BaseFooter />);
-    
+
     const baseFooter = screen.getByTestId('BaseFooter');
 
     expect(baseFooter).toBeInTheDocument();

@@ -1,7 +1,7 @@
-import React from "react";
-import "./BaseMain.css";
-import Exercice from "../Exercice/Exercice";
-import AddExerciceForm from "../AddExerciceForm/AddExerciceForm";
+import React from 'react';
+import './BaseMain.css';
+import Exercice from '../Exercice/Exercice';
+import AddExerciceForm from '../AddExerciceForm/AddExerciceForm';
 
 const BaseMain = () => (
   <div className="BaseMain" data-testid="BaseMain">
@@ -15,19 +15,17 @@ const BaseMain = () => (
         </tr>
       </thead>
       <tbody>
-        <Exercice
-          name="Pull-ups"
-          record="10 rep"
-          comment="&nbsp;"
-        ></Exercice>
+        <Exercice name="Pull-ups" record="10 rep" comment="&nbsp;"></Exercice>
         <Exercice
           name="Front Lever"
           record="10 sec"
           comment="&nbsp;"
         ></Exercice>
-        <Exercice name="Plank" 
-        record="60 sec" 
-        comment="This is a comment"></Exercice>
+        <Exercice
+          name="Plank"
+          record="60 sec"
+          comment="This is a comment"
+        ></Exercice>
       </tbody>
     </table>
 

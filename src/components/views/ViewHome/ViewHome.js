@@ -1,12 +1,12 @@
-import React from "react";
-import DefaultLayout from "../../layouts/DefaultLayout/DefaultLayout";
+import React from 'react';
+import DefaultLayout from '../../layouts/DefaultLayout/DefaultLayout';
 
 const ViewHome = () => (
-    <DefaultLayout>
-      <DefaultLayout.Header>Header</DefaultLayout.Header>
-      <DefaultLayout.Main>Main</DefaultLayout.Main>
-      <DefaultLayout.Footer>Footer</DefaultLayout.Footer>
-    </DefaultLayout>
+  <DefaultLayout>
+    <DefaultLayout.Header>Header</DefaultLayout.Header>
+    <DefaultLayout.Main>Main</DefaultLayout.Main>
+    <DefaultLayout.Footer>Footer</DefaultLayout.Footer>
+  </DefaultLayout>
 );
 
 ViewHome.propTypes = {};

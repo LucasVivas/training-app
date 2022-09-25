@@ -1,5 +1,5 @@
-import React from "react";
-import "./BaseHeader.css";
+import React from 'react';
+import './BaseHeader.css';
 
 const BaseHeader = () => (
   <div className="BaseHeader" data-testid="BaseHeader">

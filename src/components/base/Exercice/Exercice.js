@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Exercice = (props) => {
   return (
@@ -8,6 +8,6 @@ const Exercice = (props) => {
       <td>{props.comment}</td>
     </tr>
   );
-}
+};
 
-export default Exercice; 
+export default Exercice;

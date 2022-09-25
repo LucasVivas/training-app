@@ -2,11 +2,11 @@
 import BaseFooter from './BaseFooter';
 
 export default {
-  title: "BaseFooter",
+  title: 'BaseFooter'
 };
 
 export const Default = () => <BaseFooter />;
 
 Default.story = {
-  name: 'default',
+  name: 'default'
 };

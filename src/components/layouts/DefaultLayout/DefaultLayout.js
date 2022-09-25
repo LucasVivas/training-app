@@ -1,8 +1,8 @@
-import React from "react";
-import "./DefaultLayout.css";
-import BaseHeader from "../../base/BaseHeader/BaseHeader";
-import BaseMain from "../../base/BaseMain/BaseMain";
-import BaseFooter from "../../base/BaseFooter/BaseFooter";
+import React from 'react';
+import './DefaultLayout.css';
+import BaseHeader from '../../base/BaseHeader/BaseHeader';
+import BaseMain from '../../base/BaseMain/BaseMain';
+import BaseFooter from '../../base/BaseFooter/BaseFooter';
 
 const DefaultLayout = ({ children }) => {
   const header = children.find((child) => child.type === DefaultLayout.Header)
