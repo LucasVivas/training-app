@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint": "^8.24.0",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
