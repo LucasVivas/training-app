@@ -3,19 +3,19 @@ import React from 'react';
 function AddExerciceForm() {
   return (
     <form>
-      <label>
+      <label htmlFor="name">
         Name:
-        <input type="text" name="name" />
+        <input type="text" name="name" id="name" />
       </label>
 
-      <label>
+      <label htmlFor="record">
         Record:
-        <input type="text" name="record" />
+        <input type="text" name="record" id="record" />
       </label>
 
-      <label>
+      <label htmlFor="comment">
         Commentaire:
-        <input type="text" name="commentaire" />
+        <input type="text" name="comment" id="comment" />
       </label>
 
       <input type="submit" value="Submit" />
