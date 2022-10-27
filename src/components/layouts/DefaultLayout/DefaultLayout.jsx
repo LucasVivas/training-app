@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './DefaultLayout.css';
 import BaseHeader from '../../base/BaseHeader/BaseHeader';
 import BaseMain from '../../base/BaseMain/BaseMain';
 import BaseFooter from '../../base/BaseFooter/BaseFooter';
 
-const DefaultLayout = ({ children }) => {
+function DefaultLayout({ children }) {
   const header = children.find((child) => child.type === DefaultLayout.Header)
     ?.props.children;
   const main = children.find((child) => child.type === DefaultLayout.Main)
@@ -19,13 +20,25 @@ const DefaultLayout = ({ children }) => {
       {footer && <BaseFooter>{footer} </BaseFooter>}
     </>
   );
+}
+
+DefaultLayout.Header = function () {
+  return null;
+};
+DefaultLayout.Main = function () {
+  return null;
+};
+DefaultLayout.Footer = function () {
+  return null;
 };
 
-DefaultLayout.Header = () => null;
-DefaultLayout.Main = () => null;
-DefaultLayout.Footer = () => null;
+DefaultLayout.propTypes = {
+  children: PropTypes.node
+};
 
-DefaultLayout.propTypes = {};
+DefaultLayout.defaultProps = {
+  children: null
+};
 
 DefaultLayout.defaultProps = {};
 

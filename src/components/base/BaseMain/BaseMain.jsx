@@ -16,21 +16,9 @@ function BaseMain() {
           </tr>
         </thead>
         <tbody>
-          <Exercice
-            name="Pull-ups"
-            record="10 rep"
-            comment="&nbsp;"
-          />
-          <Exercice
-            name="Front Lever"
-            record="10 sec"
-            comment="&nbsp;"
-          />
-          <Exercice
-            name="Plank"
-            record="60 sec"
-            comment="This is a comment"
-          />
+          <Exercice name="Pull-ups" record="10 rep" comment="&nbsp;" />
+          <Exercice name="Front Lever" record="10 sec" comment="&nbsp;" />
+          <Exercice name="Plank" record="60 sec" comment="This is a comment" />
         </tbody>
       </table>
       <AddExerciceForm />

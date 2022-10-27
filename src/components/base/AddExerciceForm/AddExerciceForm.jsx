@@ -1,5 +1,6 @@
 import React from 'react';
-const AddExerciceForm = () => {
+
+function AddExerciceForm() {
   return (
     <form>
       <label>
@@ -20,6 +21,6 @@ const AddExerciceForm = () => {
       <input type="submit" value="Submit" />
     </form>
   );
-};
+}
 
 export default AddExerciceForm;

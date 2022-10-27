@@ -1,13 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Exercice = (props) => {
+function Exercice({ name, record, comment }) {
   return (
     <tr>
-      <td>{props.name}</td>
-      <td>{props.record}</td>
-      <td>{props.comment}</td>
+      <td>{name}</td>
+      <td>{record}</td>
+      <td>{comment}</td>
     </tr>
   );
+}
+
+Exercice.propTypes = {
+  name: PropTypes.string,
+  record: PropTypes.string,
+  comment: PropTypes.string
+};
+
+Exercice.defaultProps = {
+  name: 'MyExercice',
+  record: 'MyRecord',
+  comment: 'MyComment'
 };
 
 export default Exercice;

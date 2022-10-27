@@ -1,11 +1,13 @@
 import React from 'react';
 import './BaseFooter.css';
 
-const BaseFooter = () => (
-  <div className="BaseFooter" data-testid="BaseFooter">
-    BaseFooter Component
-  </div>
-);
+function BaseFooter() {
+  return (
+    <div className="BaseFooter" data-testid="BaseFooter">
+      BaseFooter Component
+    </div>
+  );
+}
 
 BaseFooter.propTypes = {};
 
