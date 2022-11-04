@@ -4,7 +4,7 @@ import './BaseFooter.css';
 function BaseFooter() {
   return (
     <div className="BaseFooter" data-testid="BaseFooter">
-      BaseFooter Component
+      Footer
     </div>
   );
 }

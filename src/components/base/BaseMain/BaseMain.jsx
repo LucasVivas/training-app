@@ -1,12 +1,15 @@
 import React from 'react';
 import './BaseMain.css';
+import Typography from '@mui/material/Typography';
 import AddExerciceForm from '../AddExerciceForm';
 import ExerciceList from '../ExerciceList';
 
 function BaseMain() {
   return (
     <div className="BaseMain" data-testid="BaseMain">
-      <h1>Exercices</h1>
+      <Typography variant="h2" component="h1" sx={{ flexGrow: 1 }}>
+        Exercices
+      </Typography>
       <ExerciceList />
       <AddExerciceForm />
     </div>

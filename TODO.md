@@ -1,5 +1,6 @@
 Functionnality:
 - Create exercice from front 
+- add mui on input 
 
 Tech
 - Add redux
