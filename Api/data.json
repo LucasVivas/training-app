@@ -1,0 +1,7 @@
+{
+  "exercices": [
+    { "name": "Push-ups", "record": "10 rep", "comment": "&nbsp;" },
+    { "name": "Front Lever", "record": "10 sec", "comment": "&nbsp;" },
+    { "name": "Plank", "record": "60 sec", "comment": "This is a comment" }
+  ]
+}
