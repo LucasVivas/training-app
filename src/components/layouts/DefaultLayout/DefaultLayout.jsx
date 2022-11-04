@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './DefaultLayout.css';
-import BaseHeader from '../../base/BaseHeader/BaseHeader';
-import BaseMain from '../../base/BaseMain/BaseMain';
-import BaseFooter from '../../base/BaseFooter/BaseFooter';
+import BaseHeader from '../../base/BaseHeader';
+import BaseMain from '../../base/BaseMain';
+import BaseFooter from '../../base/BaseFooter';
 
 function DefaultLayout({ children }) {
   const header = children.find((child) => child.type === DefaultLayout.Header)

@@ -1,7 +1,7 @@
 import React from 'react';
 import './BaseMain.css';
-import AddExerciceForm from '../AddExerciceForm/AddExerciceForm';
-import ExerciceList from '../ExerciceList/ExerciceList';
+import AddExerciceForm from '../AddExerciceForm';
+import ExerciceList from '../ExerciceList';
 
 function BaseMain() {
   return (
