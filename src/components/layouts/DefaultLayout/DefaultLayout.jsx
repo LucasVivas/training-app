@@ -22,9 +22,9 @@ function DefaultLayout({ children }) {
   );
 }
 
-DefaultLayout.Header = null;
-DefaultLayout.Main = null;
-DefaultLayout.Footer = null;
+DefaultLayout.Header = () => 'header';
+DefaultLayout.Main = () => 'main';
+DefaultLayout.Footer = () => 'footer';
 
 DefaultLayout.propTypes = {
   children: PropTypes.node
