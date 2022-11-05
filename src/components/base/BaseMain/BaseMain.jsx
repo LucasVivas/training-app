@@ -3,7 +3,9 @@ import './BaseMain.css';
 import Typography from '@mui/material/Typography';
 import AddExerciceForm from '../AddExerciceForm';
 import ExerciceList from '../ExerciceList';
+import AddButton from '../AddButton/AddButton';
 
+// TODO: Check if it is a container component ?
 function BaseMain() {
   return (
     <div className="BaseMain" data-testid="BaseMain">
@@ -11,6 +13,7 @@ function BaseMain() {
         Exercices
       </Typography>
       <ExerciceList />
+      <AddButton />
       <AddExerciceForm />
     </div>
   );

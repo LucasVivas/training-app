@@ -5,10 +5,16 @@
   "testLibrary": "Testing Library",
   "component": {
     "default": {
+      "customTemplates": {
+        "component": "templates/component/TemplateName.jsx",
+        "test": "templates/component/TemplateName.test.jsx",
+        "index": "templates/default/index.js"
+      },
       "path": "src/components/base",
       "withStyle": true,
       "withTest": true,
       "withStory": true,
+      "withIndex": true,
       "withLazy": false
     },
     "base": {
