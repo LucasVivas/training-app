@@ -1,0 +1,10 @@
+# Autodetect text files
+* text=auto
+
+# Definitively text files 
+*.md text
+*.jsx text
+*.js text
+*.css text
+*.json text
+
