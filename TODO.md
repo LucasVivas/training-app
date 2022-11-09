@@ -1,7 +1,8 @@
 Functionnality:
 - Create exercice from front 
-- add mui on input 
-- create form for add
+- Finish form for add
+- Create a good view component
+- Create a good layout component
 
 Tech
 - Add redux
@@ -10,5 +11,3 @@ Tech
 - Check how to really use lazy react
 - add renovate
 - add husky
-
-
