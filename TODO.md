@@ -3,6 +3,7 @@ Functionnality:
 - Finish form for add
 - Create a good view component
 - Create a good layout component
+- display nothing when no data in table
 
 Tech
 - Add redux
