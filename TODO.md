@@ -1,12 +1,11 @@
 Functionnality:
 - Create exercice from front 
-- Finish form for add
-- Create a good view component
-- Create a good layout component
+  - add last field on from
+  - connect redux to api
+- move basemain to a good layout/view component
 - display nothing when no data in table
 
 Tech
-- Add redux
 - Create some tests jest
 - Create some tests stories
 - Check how to really use lazy react

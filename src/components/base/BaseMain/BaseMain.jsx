@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './BaseMain.css';
 import Typography from '@mui/material/Typography';
+import { useDispatch } from 'react-redux';
+import { add } from '../../../store/reducers/ExercicesSlice';
 import AddExerciceForm from '../AddExerciceForm';
 import ExerciceList from '../ExerciceList';
 import AddButton from '../AddButton/AddButton';
@@ -8,12 +10,17 @@ import AddButton from '../AddButton/AddButton';
 // TODO: Check if it is a container component ?
 function BaseMain() {
   const [openAddForm, setOpenAddForm] = useState(false);
+  const dispatch = useDispatch();
 
   const handleClickOpenAddForm = () => {
     setOpenAddForm(true);
   };
 
-  const handleClose = () => {
+  const handleClose = (exercicePayload) => {
+    dispatch({
+      type: add,
+      payload: exercicePayload
+    });
     setOpenAddForm(false);
   };
 
