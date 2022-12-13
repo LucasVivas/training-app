@@ -4,7 +4,7 @@ import './BaseFooter.css';
 function BaseFooter() {
   return (
     <div className="BaseFooter" data-testid="BaseFooter">
-      Made with ❤️ In France
+      Footer ❤️
     </div>
   );
 }

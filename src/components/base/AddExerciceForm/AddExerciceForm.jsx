@@ -1,13 +1,13 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useForm } from 'react-hook-form';
+import InputTextField from './InputTextField';
 
 /* eslint-disable react/jsx-props-no-spreading */
 function AddExerciceForm({ open, handleClose, onClose }) {
@@ -22,11 +22,11 @@ function AddExerciceForm({ open, handleClose, onClose }) {
     record: 'added',
     comment: 'added'
   };
-
   return (
     <Dialog
       open={open}
       onClose={(event, reason) => {
+        // TODO: test it
         // eslint-disable-next-line
         console.log(event, reason);
         onClose(exerciceToAdd);
@@ -42,38 +42,24 @@ function AddExerciceForm({ open, handleClose, onClose }) {
         <DialogContent>
           <DialogContentText>Please enter your new record 🏅</DialogContentText>
 
-          <TextField
-            autoFocus
-            margin="dense"
+          <InputTextField
             id="name"
-            label="Exercice Name"
-            type="text"
-            fullWidth
-            variant="standard"
-            {...register('name', { required: true })}
+            label="Name"
+            register={register('name', { required: true })}
           />
-          {errors.name && <p>Exercice name is required.</p>}
+          {errors.name && <p>The name value is required.</p>}
 
-          <TextField
-            autoFocus
-            margin="dense"
+          <InputTextField
             id="record"
-            label="Record Value"
-            type="text"
-            fullWidth
-            variant="standard"
-            {...register('record', { required: true })}
+            label="Record"
+            register={register('record', { required: true })}
           />
           {errors.record && <p>The record value is required.</p>}
-          <TextField
-            autoFocus
-            margin="dense"
+
+          <InputTextField
             id="comment"
             label="Comment"
-            type="text"
-            fullWidth
-            variant="standard"
-            {...register('comment')}
+            register={register('comment')}
           />
         </DialogContent>
         <DialogActions>
