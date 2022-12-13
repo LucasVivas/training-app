@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './BaseMain.css';
 import Typography from '@mui/material/Typography';
 import { useDispatch } from 'react-redux';
-import { add } from '../../../store/reducers/ExercicesSlice';
+import { exerciceAdded } from '../../../store/reducers/ExercicesSlice';
 import AddExerciceForm from '../AddExerciceForm';
 import ExerciceList from '../ExerciceList';
 import AddButton from '../AddButton/AddButton';
@@ -16,12 +16,14 @@ function BaseMain() {
     setOpenAddForm(true);
   };
 
-  const handleClose = (exercicePayload) => {
-    dispatch({
-      type: add,
-      payload: exercicePayload
-    });
+  const handleClose = () => {
     setOpenAddForm(false);
+  };
+
+  const onClose = (exercicePayload) => {
+    // eslint-disable-next-line
+    console.log('onclose', exercicePayload);
+    dispatch(exerciceAdded(exercicePayload));
   };
 
   return (
@@ -31,7 +33,11 @@ function BaseMain() {
       </Typography>
       <ExerciceList />
       <AddButton onClick={handleClickOpenAddForm} />
-      <AddExerciceForm open={openAddForm} handleClose={handleClose} />
+      <AddExerciceForm
+        open={openAddForm}
+        handleClose={handleClose}
+        onClose={onClose}
+      />
     </div>
   );
 }

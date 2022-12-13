@@ -12,12 +12,12 @@ export const ExerciceSlice = createSlice({
   name: 'exercices',
   initialState,
   reducers: {
-    add: (state, action) => {
+    exerciceAdded: (state, action) => {
       state.push(action.payload);
     }
   }
 });
 
-export const { add } = ExerciceSlice.actions;
+export const { exerciceAdded } = ExerciceSlice.actions;
 
 export default ExerciceSlice.reducer;
