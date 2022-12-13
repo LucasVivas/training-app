@@ -20,7 +20,7 @@ function BaseMain() {
     setOpenAddForm(false);
   };
 
-  const onClose = (exercicePayload) => {
+  const onSubmit = (exercicePayload) => {
     // eslint-disable-next-line
     console.log('onclose', exercicePayload);
     dispatch(exerciceAdded(exercicePayload));
@@ -36,7 +36,7 @@ function BaseMain() {
       <AddExerciceForm
         open={openAddForm}
         handleClose={handleClose}
-        onClose={onClose}
+        onSubmit={onSubmit}
       />
     </div>
   );

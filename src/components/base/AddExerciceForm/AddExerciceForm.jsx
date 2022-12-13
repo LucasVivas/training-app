@@ -10,32 +10,19 @@ import { useForm } from 'react-hook-form';
 import InputTextField from './InputTextField';
 
 /* eslint-disable react/jsx-props-no-spreading */
-function AddExerciceForm({ open, handleClose, onClose }) {
+function AddExerciceForm({ open, handleClose, onSubmit }) {
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm();
 
-  const exerciceToAdd = {
-    name: 'added',
-    record: 'added',
-    comment: 'added'
-  };
   return (
-    <Dialog
-      open={open}
-      onClose={(event, reason) => {
-        // TODO: test it
-        // eslint-disable-next-line
-        console.log(event, reason);
-        onClose(exerciceToAdd);
-      }}
-    >
+    <Dialog open={open} onClose={handleClose}>
       <DialogTitle>Add Record Exercice</DialogTitle>
       <form
         onSubmit={handleSubmit((data) => {
-          onClose(data);
+          onSubmit(data);
           handleClose();
         })}
       >
@@ -76,13 +63,13 @@ function AddExerciceForm({ open, handleClose, onClose }) {
 AddExerciceForm.propTypes = {
   open: Proptypes.bool,
   handleClose: Proptypes.func,
-  onClose: Proptypes.func
+  onSubmit: Proptypes.func
 };
 
 AddExerciceForm.defaultProps = {
   open: null,
   handleClose: null,
-  onClose: null
+  onSubmit: null
 };
 
 export default AddExerciceForm;

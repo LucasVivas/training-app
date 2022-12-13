@@ -1,7 +1,7 @@
 Functionnality:
 - Create exercice from front 
-  - add last field on from
   - connect redux to api
+  - add error on button
 - move basemain to a good layout/view component
 - display nothing when no data in table
 
