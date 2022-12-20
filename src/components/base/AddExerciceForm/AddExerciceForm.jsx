@@ -32,28 +32,27 @@ function AddExerciceForm({ open, handleClose, onSubmit }) {
           <InputTextField
             id="name"
             label="Name"
+            error={errors.name && true}
             register={register('name', { required: true })}
           />
-          {errors.name && <p>The name value is required.</p>}
 
           <InputTextField
             id="record"
             label="Record"
+            error={errors.record && true}
             register={register('record', { required: true })}
           />
-          {errors.record && <p>The record value is required.</p>}
 
           <InputTextField
             id="comment"
             label="Comment"
+            error={errors.comment && true}
             register={register('comment')}
           />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button type="submit" onClick={handleClose}>
-            Subscribe
-          </Button>
+          <Button type="submit">Subscribe</Button>
         </DialogActions>
       </form>
     </Dialog>
